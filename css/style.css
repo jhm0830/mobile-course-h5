@@ -1,0 +1,174 @@
+@charset "utf-8"
+/*CSS Document*/
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+/*all tag*/
+html,body{
+	width:100%;
+	/* font-size: 12px; */
+	font-family: 微软雅黑,Micrsoft Yahei,Helvetica;
+}
+ul,li{margin:0; padding:0;list-style-type: none;}
+a,a:hover,a:focus{text-decoration: initial;}
+/*page bg*/
+.page{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/*fixed_top 页面固定部分*/
+.fixed_top{
+	width: 100%;
+	/*height: 2.5rem;*/
+	overflow: hidden;
+}
+/*title 样式*/
+header.title{
+	width: 100%;
+	height: 0.335rem;
+	line-height: 0.335rem;
+	text-align: center;
+	font-size: 0.13rem;
+	background: #edf0f0;
+}
+/*视频播放栏 样式*/
+.video{
+	width: 100%;
+	height: 1.81rem;
+	overflow: hidden;
+	background: #479fff;
+}
+/*菜单栏 样式*/
+.nav{
+	/*width: 100%;*/
+	height: 0.355rem;
+	padding:0 0.25rem;
+	position: relative;
+	background: #edf0f0;
+	overflow: hidden;
+}
+.nav ul{
+	width: 100%;
+	height: 0.355rem;
+	overflow-x: scroll;
+    overflow-y: hidden;
+}
+/* .nav ul li{
+	overflow: hidden;
+} */
+.nav ul li{
+	width: 0.55rem;
+	margin-right:0.105rem;
+	float: left;
+	height: 0.355rem;
+	line-height: 0.355rem;
+	font-size: 0.12rem;
+	color: #323537;
+	position: relative;
+
+}
+.nav ul li span.underline{
+	width:.0.6rem;
+	height: 0.02rem;
+	display: inline-block;
+	background: #479fff;
+	position: absolute;
+	left: 0;
+	bottom: 0; 
+	transition: 1.5s linear;
+}
+/*滚屏箭头*/
+.nav a.arrow{
+	width: 0.25rem;
+	height: 0.355rem;
+	text-align: center;
+	line-height: 0.355rem;
+	font-size: 0.12rem;
+	position: absolute;
+	z-index: 999;
+	font-weight: 700;
+	color: #727576;
+}
+.nav a#prev{
+	top:0;
+	left:0;
+}
+.nav a#next{
+	top:0;
+	right:0;
+	background: #EDF0F0;
+}
+.lineBorder{
+	height: 2px; 
+	overflow: hidden;
+	background: #EDF0F0;
+	padding:0 0.25rem;
+}
+.lineDiv{ 
+	background: #479FFF; 
+	height: 2px; 
+	width: 0.55rem;
+}
+/*栏目列表、内容框 样式*/
+.content_down{
+	position: relative;
+}
+.tabBox{ position: relative}
+.tabList{
+	word-break: break-all; 
+	width:100%;
+	float:left; 
+}
+/*视频列表*/
+.nav_list_v{
+	overflow-y: scroll;
+}
+.nav_list_v{padding:0.12rem;}
+.nav_list_v li{
+	width: 100%;
+	height: 0.33rem;
+	line-height: 0.33rem;
+	overflow: hidden;
+}
+.nav_list_v li a{
+	overflow: hidden;
+	display: block;
+	color: #323537;
+	font-size: 0.12rem;
+}
+.nav_list_v li span.icon_v{
+	width: 0.12rem;
+	height: 0.12rem;
+	display: inline-block;
+	margin-right: 0.12rem;
+}
+.nav_list_v li span.duration{
+	float: right;
+	width: 0.25rem;
+	height: 0.14rem;
+	line-height: 0.14rem;
+	text-align: center;
+	color: #323537;
+	display: inline-block;
+	border-radius:3px;
+	background: #d0d0d0;
+	margin-top: 0.12rem;
+	font-size: 0.09rem;
+}
+.nav_list_v li .active{color: #479fff;}
+.nav_list_v li span.duration_in{
+	background: #479fff;
+	color: #ffffff;
+}
+/*课程文本*/
+.nav_list_t{
+	width: 100%;
+	padding: 0.12rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
