@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	 <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	 <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	 <link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
+	</head>
+	<body>
+		<div data-role="page" id="wrap">
+			<section class="fixed_top">
+				<header class="title" id="coursetitle"></header>
+				<section class="video" id="video"></section>
+				<nav class="nav" id="nav">
+					<ul class="tabClick"></ul>
+					<a href="javascript:;" class="arrow glyphicon glyphicon-menu-left" id="prev">&lt;</a>
+					<a href="javascript:;" class="arrow glyphicon glyphicon-menu-right" id="next">&gt;</a>
+				</nav>
+				<section class="lineBorder">
+                	<section class="lineDiv"><!--移动的div--></section>
+            	</section>
+			</section>
+			<section class="tabBox content_down">
+				<div class="tabList nav_list_v" id="nav_list_v"><ul></ul></div>
+			</section>
+		</div>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+	<script src="js/data.js" type="text/javascript"></script>
+	<script src="js/f.js" type="text/javascript"></script> 
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript">
+$('#nav .tabClick li').live("pageshow", function () {  
+  var width = 0;  
+  $('#overflow .container div').each(function () {  
+    width += $(this).outerWidth(true);  
+  });  
+  $('#overflow .container').css('width', width + "px");  
+})  
+	</script>
+		</body>
+</html>
